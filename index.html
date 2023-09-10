@@ -4,9 +4,116 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./imagenes/barco-papel.jpg" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
         <title>Artes RK | Inicio</title>
     </head>
     <body>
-        
+        <header class="headerPrincipal">
+            <a href="./index.html">
+                <img src="./imagenes/imglogoderedes.jpeg" alt="logo de pagina">
+                <h1>Artes RK</h1>
+            </a>
+            <div class="listaHeader">
+                <ul>
+                    <li><a href="./paginas/productos.html">Productos</a></li>
+                    <li><a href="./paginas/carrito.html">Carrito de Compras</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="mainPrincipal">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button id="botonIzquierdo" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button  id="botonDerecho" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="divisionImagen1">
+                            <img src="https://images.pexels.com/photos/20967/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block" id="imagenCarrusel1" alt="#">
+                            <img src="https://images.pexels.com/photos/1671016/pexels-photo-1671016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block" id="imagenCarrusel2" alt="#">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="divisionImagen2">
+                            <img src="https://images.pexels.com/photos/2440471/pexels-photo-2440471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block" id="imagenCarrusel3" alt="...">
+                            <img src="./imagenes/cuadro8.jpeg" class="d-block" id="imagenCarrusel4" alt="...">
+                            <img src="https://blog.delapaz.com.py/wp-content/uploads/2021/03/ae408a18-ddc5-411f-8832-57ab2b882d69-1024x1024.jpg" class="d-block" id="imagenCarrusel5" alt="...">
+                        </div>
+                    </div>                
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <section>
+                <div class="tiposdeObras">
+                    <div class="cuadroArte1">  
+                        <div class="imgFondo1">                  
+                            <img src="https://ventadearte.com.ar/wp-content/uploads/2020/11/objeto5.jpg" alt="">
+                        </div>    
+                        <div class="recuadro">
+                            <p>
+                                Obras Abstractas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cuadroArte2">
+                        <div class="imgFondo1">                  
+                            <img src="https://blog.delapaz.com.py/wp-content/uploads/2021/03/ae408a18-ddc5-411f-8832-57ab2b882d69-1024x1024.jpg" alt="">
+                        </div>    
+                        <div class="recuadro">
+                            <p>
+                                Compra tu Arte
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cuadroArte3">
+                        <div class="imgFondo1">                  
+                            <img src="https://images.pexels.com/photos/4442028/pexels-photo-4442028.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="">
+                        </div>    
+                        <div class="recuadro">
+                            <p>
+                                Regala Obras
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="fondoFooter">
+                <a href="./index.html" class="logoFooter" >
+                    <img src="./imagenes/imglogoderedes.jpeg" alt="imagen">
+                    <p>Artes RK</p>
+                </a> 
+                <div class="metodosPagos">
+                    <p>METODOS DE PAGO</p>
+                    <div class="iconosPagos">
+                        <img src="https://www.lilis.com.ar/media/wysiwyg/medios-de-pago-tarjetas-lilis.jpg" alt="icono">
+                    </div>
+                </div>
+                <div class="formaEnvios">
+                    <p>FORMAS DE ENVIO</p>
+                    <div class="iconosEnvios">
+                        <img src="./imagenes/formasdeEnvio.jpeg" alt="icono">
+                    </div>
+                </div>
+                <div class="redesSociales">
+                    <p>FORMAS DE ENVIO</p>
+                    <a href="http://www.instagram.com/resler.ka/" target="_blank" class="instagram"><img src="./imagenes/instagram1.png" alt="insta"></a>
+                    <a href="http://www.instagram.com/resler.ka/" target="_blank" class="facebook"><img src="./imagenes/facebook.png" alt="facebok"></a>
+                    <a href="http://www.instagram.com/resler.ka/" target="_blank" class="twitter"><img src="./imagenes/twitter.png " alt="x" ></a>
+                </div>
+                <p class="credito"> © Aybar Marcos 2023</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     </body>
 </html>
