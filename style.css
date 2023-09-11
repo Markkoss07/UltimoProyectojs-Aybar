@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 *{
     margin: 0px;
@@ -11,6 +12,14 @@
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
     --clr-red: #961818;
+    --clr-orange: rgba(203,104,38,1);
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .headerPrincipal{
@@ -64,7 +73,7 @@
 .headerPrincipal .listaHeader ul :last-child {
     border-right: 0px;
 }
-footer {
+.footerPrincipal {
     width: 100%;
     height: 300px;
     background-color: rgba(125, 124, 124, 0.59);
@@ -155,7 +164,9 @@ footer {
     margin-top: 140px;
     text-align: center;
   }
-
+.mainPrincipal{
+  height: 1800px;
+}
 main #carouselExampleIndicators {
     width: 100%;
     height: 600px;
@@ -215,7 +226,7 @@ main #carouselExampleIndicators {
   main section .tiposdeObras .cuadroArte1 {
     width: 350px;
     height: 320px;
-    margin-left: 70px;
+    margin-left: 85px;
     margin-top: 40px;
     background-color: white;
     position: relative;
@@ -305,12 +316,63 @@ main #carouselExampleIndicators {
     text-transform: uppercase;
     color: black;
   }
+  .descripcion-pagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 600px;
+    border-radius:15px ;
+    box-shadow: 14px 7px 11px 4px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 14px 7px 11px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 14px 7px 11px 4px rgba(0,0,0,0.2);
+    
+  }
+  .imagenesdeProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .imagenesdeProductos1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+  } 
+  .img-descripcion{
+    width: 30%;
+    height: 250px;
+  }
+  .botonirProductos{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--clr-orange);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .botonirProductos a{
+    color: #000;
+  }
 
  /* productos */
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-image: url('https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-color: var(--clr-orange);
 }
 
 aside {
@@ -327,7 +389,10 @@ aside {
 
 .logo {
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    color: #000;
+
 }
 
 .menu {
@@ -345,7 +410,7 @@ aside {
     align-items: center;
     gap: 1rem;
     font-weight: 600;
-    padding: 1rem;
+    padding: 16px 0 16px 3px;
     font-size: .85rem;
     width: 100%;
 }
@@ -404,12 +469,14 @@ aside {
 }
 
 .texto-footer {
-    color: var(--clr-main-light);
-    font-size: .85rem;
+    color: var(--clr-red);
+    font-size: 14px;
 }
 
 #mainProductos {
-    background-color: var(--clr-white);
+    /* background-color: var(--clr-white); */
+    background-image: url('https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') ;
+    background-size:contain;
     margin: 1rem;
     margin-left: 0;
     border-radius: 2rem;
@@ -417,8 +484,10 @@ aside {
 }
 
 .titulo-principal {
-    color: var(--clr-main);
-    margin-bottom: 2rem;
+    color:#000;
+    font-family:'Montserrat';
+    font-weight: bold;
+    margin-bottom: 32px;
 }
 
 .contenedor-productos {
@@ -471,12 +540,14 @@ aside {
 .contenedor-carrito {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 24px;
 }
 
 .carrito-vacio,
 .carrito-comprado {
-    color: var(--clr-main);
+    color:#000;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .carrito-productos {
@@ -553,9 +624,7 @@ aside {
     border-bottom-right-radius: 1rem;
 }
 
-.header-mobile {
-    display: none;
-}
+
 
 .close-menu {
     display: none;

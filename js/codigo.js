@@ -1,11 +1,226 @@
-let productos = [];
 
-fetch("./js/productos.json")
-    .then(response => response.json())
-    .then(data => {
-        productos = data;
-        cargarProductos(productos);
-    })
+const productos = [
+    // Destacados
+    {
+        id: "cuadro-01",
+        titulo: "Tiempos de luz",
+        imagen: "../imagenes/cuadro1.jpeg",
+        categoria: {
+            nombre: "Destacados",
+            id: "destacados"
+        },
+        precio: 6600
+    },
+    {
+        id: "cuadro-02",
+        titulo: "En Casa",
+        imagen: "../imagenes/cuadro2.jpeg",
+        categoria: {
+            nombre: "Descatados",
+            id: "destacados"
+        },
+        precio: 12000
+    },
+    {
+        id: "cuadro-03",
+        titulo: "Sin Titulo",
+        imagen: "../imagenes/cuadro3.jpeg",
+        categoria: {
+            nombre: "Destacados",
+            id: "destacados"
+        },
+        precio: 6000
+    },
+    {
+        id: "cuadro-04",
+        titulo: "Al fin libre",
+        imagen: "../imagenes/cuadro4.jpeg",
+        categoria: {
+            nombre: "Destacados",
+            id: "destacados"
+        },
+        precio: 10000
+    },
+    {
+        id: "cuadro-05",
+        titulo: "Eterno camino",
+        imagen: "../imagenes/cuadro5white.jpeg",
+        categoria: {
+            nombre: "Destacados",
+            id: "destacados"
+        },
+        precio: 15000
+    },
+    {
+        id: "cuadro-06",
+        titulo: "Mirame a los ojos",
+        imagen: "../imagenes/cuadro6white.jpeg",
+        categoria: {
+            nombre: "Destacados",
+            id: "destacados"
+        },
+        precio: 7000
+    },
+    {
+        id: "cuadro-09",
+        titulo: "Encerrada",
+        imagen: "../imagenes/cuadro-rojo9.jpeg",
+        categoria: {
+            nombre: "Destacados",
+            id: "destacados"
+        },
+        precio: 25000
+    },
+    {
+        id: "cuadro-10",
+        titulo: "La Hechizada",
+        imagen: "../imagenes/cuadro10.jpeg",
+        categoria: {
+            nombre: "Destacados",
+            id: "destacados"
+        },
+        precio: 8000
+    },
+    {
+        id: "cuadro-07",
+        titulo: "Recuerdos",
+        imagen: "../imagenes/cuadro7white.jpeg",
+        categoria: {
+            nombre: "Destacados",
+            id: "destacados"
+        },
+        precio: 25000
+    },
+    // decorativos
+    {
+        id: "cuadro-15",
+        titulo: "Paraiso colorido",
+        imagen: "../imagenes/cuadro15deco.jpeg",
+        categoria: {
+            nombre: "Decorativos",
+            id: "decorativos"
+        },
+        precio: 13000
+    },
+    {
+        id: "cuadro-16",
+        titulo: "La cabaña",
+        imagen: "../imagenes/cuadro16deco.jpeg",
+        categoria: {
+            nombre: "Decorativos",
+            id: "decorativos"
+        },
+        precio: 29000
+    },
+    {
+        id: "cuadro-17",
+        titulo: "Doble cara",
+        imagen: "../imagenes/cuadro17deco.jpeg",
+        categoria: {
+            nombre: "Decorativos",
+            id: "decorativos"
+        },
+        precio: 17000
+    },
+    {
+        id: "cuadro-18",
+        titulo: "Divina mujer",
+        imagen: "../imagenes/cuadro18deco.jpeg",
+        categoria: {
+            nombre: "Decorativos",
+            id: "decorativos"
+        },
+        precio: 11000
+    },
+    {
+        id: "cuadro-08",
+        titulo: "Encerrada deco",
+        imagen: "../imagenes/cuadro8.jpeg",
+        categoria: {
+            nombre: "Destacados",
+            id: "decorativos"
+        },
+        precio: 28000
+    },
+    // Blanco y Negro
+    {
+        id: "cuadro-11",
+        titulo: "El nocturno",
+        imagen: "../imagenes/cuadro11white.jpeg",
+        categoria: {
+            nombre: "Blanco y Negro",
+            id: "blancoNegro"
+        },
+        precio: 29000
+    },
+    {
+        id: "cuadro-12",
+        titulo: "Nítido",
+        imagen: "../imagenes/cuadro12white.jpeg",
+        categoria: {
+            nombre: "Blanco y Negro",
+            id: "blancoNegro"
+        },
+        precio: 30000
+    },
+    {
+        id: "cuadro-13",
+        titulo: "Bailarina gótica",
+        imagen: "../imagenes/cuadro13white.jpeg",
+        categoria: {
+            nombre: "Blanco y Negro",
+            id: "blancoNegro"
+        },
+        precio: 27000
+    },
+    {
+        id: "cuadro-14",
+        titulo: "Barrio luminado",
+        imagen: "../imagenes/cuadro14white.jpeg",
+        categoria: {
+            nombre: "Blanco y Negro",
+            id: "blancoNegro"
+        },
+        precio: 21000
+    },
+    {
+        id: "cuadro-05",
+        titulo: "Eterno camino",
+        imagen: "../imagenes/cuadro5white.jpeg",
+        categoria: {
+            nombre: "Blanco y Negro",
+            id: "blancoNegro"
+        },
+        precio: 15000
+    },
+    {
+        id: "cuadro-06",
+        titulo: "Mirame a los ojos",
+        imagen: "../imagenes/cuadro6white.jpeg",
+        categoria: {
+            nombre: "Blanco y Negro",
+            id: "blancoNegro"
+        },
+        precio: 7000
+    },
+    {
+        id: "cuadro-07",
+        titulo: "Recuerdos",
+        imagen: "../imagenes/cuadro7white.jpeg",
+        categoria: {
+            nombre: "Blanco y Negro",
+            id: "blancoNegro"
+        },
+        precio: 25000
+    }
+];
+
+// fetch("../js/productos.json")
+//     .then(response => response.json())
+//     .then(data => {
+//         productos = data;
+//         cargarProductos(productos);
+//     })
 
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
