@@ -376,7 +376,7 @@ main #carouselExampleIndicators {
 }
 
 aside {
-    padding: 2rem;
+    padding: 32px;
     padding-right: 0;
     color: var(--clr-white);
     position: sticky;
@@ -389,16 +389,17 @@ aside {
 
 .logo {
     font-weight: 400;
-    font-size: 25px;
+    font-size: 28px;
     font-family: 'Montserrat';
     color: #000;
+    margin-top: 20px;
 
 }
 
 .menu {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 8px;
 }
 
 .boton-menu {
@@ -408,43 +409,43 @@ aside {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 16px;
     font-weight: 600;
     padding: 16px 0 16px 3px;
-    font-size: .85rem;
+    font-size: 13.6px;
     width: 100%;
 }
 
 .boton-menu.active {
     background-color: var(--clr-white);
     color: var(--clr-main);
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
     position: relative;
 }
 
 .boton-menu.active::before {
     content: '';
     position: absolute;
-    width: 1rem;
-    height: 2rem;
+    width: 16px;
+    height: 32px;
     bottom: 100%;
     right: 0;
     background-color: transparent;
-    border-bottom-right-radius: .5rem;
-    box-shadow: 0 1rem 0 var(--clr-white);
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 16px 0 var(--clr-white);
 }
 
 .boton-menu.active::after {
     content: '';
     position: absolute;
-    width: 1rem;
-    height: 2rem;
+    width: 16px;
+    height: 32px;
     top: 100%;
     right: 0;
     background-color: transparent;
-    border-top-right-radius: .5rem;
-    box-shadow: 0 -1rem 0 var(--clr-white);
+    border-top-right-radius: 8px;
+    box-shadow: 0 --16px 0 var(--clr-white);
 }
 
 .boton-menu > i.bi-hand-index-thumb-fill,
@@ -453,14 +454,14 @@ aside {
 }
 
 .boton-carrito {
-    margin-top: 2rem;
+    margin-top: 32px;
 }
 
 .numerito {
     background-color: var(--clr-white);
     color: var(--clr-main);
-    padding: .15rem .25rem;
-    border-radius: .25rem;
+    padding: 2.5px 4px;
+    border-radius: 4px;
 }
 
 .boton-carrito.active .numerito {
@@ -477,10 +478,10 @@ aside {
     /* background-color: var(--clr-white); */
     background-image: url('https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') ;
     background-size:contain;
-    margin: 1rem;
+    margin: 16px;
     margin-left: 0;
-    border-radius: 2rem;
-    padding: 3rem;
+    border-radius: 32px;
+    padding: 48px;
 }
 
 .titulo-principal {
@@ -493,37 +494,37 @@ aside {
 .contenedor-productos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 16px;
 }
 
 .producto-imagen {
     max-width: 100%;
-    border-radius: 1rem;
+    border-radius: 16px;
 }
 
 .producto-detalles {
     background-color: var(--clr-main);
     color: var(--clr-white);
-    padding: .5rem;
-    border-radius: 1rem;
-    margin-top: -2rem;
+    padding: 8px;
+    border-radius: 16px;
+    margin-top: -32px;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: .25rem;
+    gap: 4px;
 }
 
 .producto-titulo {
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 .producto-agregar {
     border: 0;
     background-color: var(--clr-white);
     color: var(--clr-main);
-    padding: .4rem;
+    padding: 6.5px;
     text-transform: uppercase;
-    border-radius: 2rem;
+    border-radius: 32px;
     cursor: pointer;
     border: 2px solid var(--clr-white);
     transition: background-color .2s, color .2s;
@@ -553,7 +554,7 @@ aside {
 .carrito-productos {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .carrito-producto {
@@ -562,18 +563,18 @@ aside {
     align-items: center;
     background-color: var(--clr-gray);
     color: var(--clr-main);
-    padding: .5rem;
-    padding-right: 1.5rem;
-    border-radius: 1rem;
+    padding: 8px;
+    padding-right: 24px;
+    border-radius: 16px;
 }
 
 .carrito-producto-imagen {
-    width: 4rem;
-    border-radius: 1rem;
+    width: 64px;
+    border-radius: 16px;
 }
 
 .carrito-producto small {
-    font-size: .75rem;
+    font-size: 12px;
 }
 
 .carrito-producto-eliminar {
@@ -591,8 +592,8 @@ aside {
 .carrito-acciones-vaciar {
     border: 0;
     background-color: var(--clr-gray);
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 16px;
+    border-radius: 16px;
     color: var(--clr-main);
     text-transform: uppercase;
     cursor: pointer;
@@ -605,30 +606,25 @@ aside {
 .carrito-acciones-total {
     display: flex;
     background-color: var(--clr-gray);
-    padding: 1rem;
+    padding: 16px;
     color: var(--clr-main);
     text-transform: uppercase;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    gap: 1rem;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    gap: 16px;
 }
 
 .carrito-acciones-comprar {
     border: 0;
     background-color: var(--clr-main);
-    padding: 1rem;
+    padding: 16px;
     color: var(--clr-white);
     text-transform: uppercase;
     cursor: pointer;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 
-
-
-.close-menu {
-    display: none;
-}
 
 .disabled {
     display: none;
